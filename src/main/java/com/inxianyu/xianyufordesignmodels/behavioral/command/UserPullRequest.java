@@ -1,8 +1,10 @@
 package com.inxianyu.xianyufordesignmodels.behavioral.command;
 
+
 public class UserPullRequest {
     public static void main(String[] args) {
         //初始化圈子
+
         HandleReceiver handle1 = new Group1("groupName");
         //初始化 可发布的评论
         RequestCommand request1 = new Request1(handle1,"postId");
