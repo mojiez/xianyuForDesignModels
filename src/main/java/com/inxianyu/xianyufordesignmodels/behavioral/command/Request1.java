@@ -5,12 +5,12 @@ public class Request1 extends RequestCommand{
         super(handle,postId);
     }
     @Override
-    public void executeCommand() {
-        handle.publishing(postId);
+    public String executeCommand() {
+        return handle.publishing(postId);
     }
 
     @Override
-    public void cancelCommand() {
-        handle.notpublishing(postId);
+    public String cancelCommand() {
+        return handle.notpublishing(postId);
     }
 }

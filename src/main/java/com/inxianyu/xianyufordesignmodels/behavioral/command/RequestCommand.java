@@ -7,6 +7,6 @@ public abstract class RequestCommand {
         this.handle = handle;
         this.postId = postId;
     }
-    abstract public void executeCommand();
-    abstract public void cancelCommand();
+    abstract public String executeCommand();
+    abstract public String cancelCommand();
 }

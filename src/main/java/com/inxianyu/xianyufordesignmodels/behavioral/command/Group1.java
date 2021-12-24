@@ -5,12 +5,14 @@ public class Group1 extends HandleReceiver{
         super(groupName);
     }
     @Override
-    public void publishing(String postId) {
+    public String publishing(String postId) {
         System.out.println(groupName+"正在发布"+postId);
+        return groupName+"正在发布"+postId;
     }
 
     @Override
-    public void notpublishing(String postId) {
+    public String notpublishing(String postId) {
         System.out.println(groupName+"取消发布"+postId);
+        return groupName+"取消发布"+postId;
     }
 }
