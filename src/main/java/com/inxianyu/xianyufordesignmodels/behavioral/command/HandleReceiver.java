@@ -5,6 +5,6 @@ public abstract class HandleReceiver {
     public HandleReceiver(String groupName){
         this.groupName = groupName;
     }
-    abstract public void publishing(String postId);
-    abstract public void notpublishing(String postId);
+    abstract public String publishing(String postId);
+    abstract public String notpublishing(String postId);
 }
