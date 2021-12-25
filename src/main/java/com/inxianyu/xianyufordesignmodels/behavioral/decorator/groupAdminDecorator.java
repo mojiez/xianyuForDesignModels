@@ -15,15 +15,29 @@ public class groupAdminDecorator extends memberDecorator{
         return groupmember.sendMessage(message);
     }
 
-    private void withMark(){
+    private String withMark(){
         System.out.println("管理员的id为:"+id);
+        return "管理员的id为:"+id;
     }
 
-    private void deleteMember(){
+    private String deleteMember(){
         System.out.println("删除了一位成员..");
+        return "删除了一位成员..";
     }
 
-    private void addMember(){
+    private String addMember(){
         System.out.println("添加了一位成员..");
+        return "添加了一位成员..";
+    }
+
+    public String TestWithMark(){
+        return withMark();
+    }
+
+    public String TestDelete(){
+        return  deleteMember();
+    }
+    public String TestAdd(){
+        return addMember();
     }
 }
