@@ -2,16 +2,16 @@ package com.inxianyu.xianyufordesignmodels.create.FactoryPattern;
 
 public class FactoryDemo {
     public static void main(String[] args){
-            puyfactory puyment = new puyfactory();
+            payfactory puyment = new payfactory();
 
-            puy puy1 = puyfactory.getpuy("zhifubao");
-            puy1.puy();
+            pay pay1 = payfactory.getpay("zhifubao");
+            pay1.pay();
 
-            puy puy2 = puyfactory.getpuy("OnlineBanking");
-            puy2.puy();
+            pay pay2 = payfactory.getpay("OnlineBanking");
+            pay2.pay();
 
-            puy puy3 = puyfactory.getpuy("CreditCard");
-            puy3.puy();
+            pay pay3 = payfactory.getpay("CreditCard");
+            pay3.pay();
         }
     }
 

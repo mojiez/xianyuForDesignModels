@@ -7,20 +7,33 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class groupAdminDecoratorTest {
+<<<<<<< HEAD
     static int testnumber;
     normalMember member = new normalMember();
     @Before
     public void setUp() throws Exception {
         System.out.println("test:"+testnumber+" starts..");
+=======
+    static int testnumber=1;
+
+    @Before
+    public void setUp() throws Exception {
+        System.out.println("Test:"+testnumber+" starts..");
+>>>>>>> 5f399225212fdcd56a6813a5837ff739ba1e4877
     }
 
     @After
     public void tearDown() throws Exception {
+<<<<<<< HEAD
         testnumber++;
+=======
+        System.out.println("Test:"+testnumber+" ends..");
+>>>>>>> 5f399225212fdcd56a6813a5837ff739ba1e4877
     }
 
     @Test
     public void sendMessage() {
+<<<<<<< HEAD
         int id = 123;
         String msg = "";
         groupAdminDecorator admin = new groupAdminDecorator(member,id);
@@ -49,5 +62,11 @@ public class groupAdminDecoratorTest {
         String msg = "";
         groupAdminDecorator admin = new groupAdminDecorator(member,id);
         assertEquals("添加了一位成员..",admin.TestAdd());
+=======
+        String message = "hello";
+        groupMember groupmember = new normalMember();
+        new groupAdminDecorator(groupmember,1);
+        assertEquals(true,groupmember.sendMessage(message));
+>>>>>>> 5f399225212fdcd56a6813a5837ff739ba1e4877
     }
 }

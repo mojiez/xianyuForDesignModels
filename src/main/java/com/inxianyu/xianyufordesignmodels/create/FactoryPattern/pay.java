@@ -1,7 +1,7 @@
 package com.inxianyu.xianyufordesignmodels.create.FactoryPattern;
 
-public interface puy {
-    void puy();
+public interface pay {
+    void pay();
 }
 
 

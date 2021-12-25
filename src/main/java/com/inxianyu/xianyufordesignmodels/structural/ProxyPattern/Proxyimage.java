@@ -9,10 +9,11 @@ public class Proxyimage implements image{
     }
 
     @Override
-    public void display() {
+    public String display() {
         if (realImage==null){
             realImage=new realimage(fileName);
         }
         realImage.display();
+        return null;
     }
 }
