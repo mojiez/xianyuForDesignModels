@@ -2,10 +2,10 @@ package com.inxianyu.xianyufordesignmodels.behavioral.ObserverPattern;
 
 public class observerDemo {
     public static void main(String[] args){
-        WechatSubscription account=new WechatSubscription();
-        observer user1=new WechatUser("Allen",account);
-        observer user2=new WechatUser("Jack",account);
-        observer user3=new WechatUser("Luck",account);
+        QuanziSubscription account=new QuanziSubscription();
+        observer user1=new QuanziUser("Allen",account);
+        observer user2=new QuanziUser("Jack",account);
+        observer user3=new QuanziUser("Luck",account);
 
         account.attach(user1);
         account.attach(user2);

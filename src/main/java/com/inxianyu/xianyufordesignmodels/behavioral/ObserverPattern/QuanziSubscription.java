@@ -3,13 +3,13 @@ package com.inxianyu.xianyufordesignmodels.behavioral.ObserverPattern;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WechatSubscription {
+public class QuanziSubscription {
     private List<observer> users=new ArrayList<observer>();
     private String news;
 
     public void updateNews(String news){
         this.news=news;
-        System.out.printf("公众号更新了内容：%s%n",news);
+        System.out.printf("圈子更新了内容：%s%n",news);
         notifyUsers();
     }
     public String getNews(){

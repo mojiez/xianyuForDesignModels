@@ -1,7 +1,7 @@
 package com.inxianyu.xianyufordesignmodels.create.FactoryPattern;
 
-public class puyfactory {
-    public static puy getpuy(String payment){
+public class payfactory {
+    public static pay getpay(String payment){
         if(payment==null){
             return null;
         }

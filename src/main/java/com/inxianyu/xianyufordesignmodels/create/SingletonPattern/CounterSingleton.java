@@ -1,13 +1,13 @@
 package com.inxianyu.xianyufordesignmodels.create.SingletonPattern;
 
-public class Counter {
-    private static Counter instance;
+public class CounterSingleton {
+    private static CounterSingleton instance;
     private int count = 0;
-    private Counter(){}
-    public synchronized static Counter getInstance(){
+    private CounterSingleton(){}
+    public synchronized static CounterSingleton getInstance(){
         if(instance==null){
             System.out.println("交易量统计开始。");
-            instance=new Counter();
+            instance=new CounterSingleton();
         }
         return instance;
     }
