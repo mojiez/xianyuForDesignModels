@@ -29,7 +29,7 @@ public class UserInXianyu {
 
     private void showWhatCanUserDo(){
         System.out.println("请输入你要选择的功能:(按-1退出)");
-        System.out.println("1. 商品发布\n2. 接收推送\n3. 结算购物车\n4. 发布评论\n5.查看图片");
+        System.out.println("1. 商品发布\n2. 接收推送\n3. 结算购物车\n4. 发布评论\n5. 查看图片");
 
     }
 
@@ -54,7 +54,7 @@ public class UserInXianyu {
                 adidas.showItems();
 
                 System.out.println("Total Cost:"+adidas.getCost());
-                System.out.println("\n请选择付款方式:\n1. alipay\n2. onlineBanking\n2.CreditCard");
+                System.out.println("\n请选择付款方式:\n1. alipay\n2. onlineBanking\n3. CreditCard");
                 payment();
             }else if (CanDoChoice == 4){
                 pinglun();
@@ -79,7 +79,7 @@ public class UserInXianyu {
     private void payment(){
         payMethods = input.nextInt();
         payfactory payment = new payfactory();
-        try {
+
             if (payMethods == 1){
                 pay zhifubao = payfactory.getpay("zhifubao");
                 zhifubao.pay();
@@ -89,9 +89,9 @@ public class UserInXianyu {
             }else if (payMethods == 3){
                 pay creditCard = payfactory.getpay("CreditCard");
                 creditCard.pay();
+            }else {
+                System.out.println("您的支付方式不合法！");
             }
-        }catch (Exception e){
-            System.out.println("你输入的支付方式不合法");
-        }
+
     }
 }
