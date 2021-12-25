@@ -1,8 +1,8 @@
 package com.inxianyu.xianyufordesignmodels.behavioral.ObserverPattern;
 
 public abstract class observer {
-    public WechatSubscription subscriptAccount;
+    public QuanziSubscription subscriptAccount;
     public String name;
 
-    abstract public void update();
+    abstract public String update();
 }

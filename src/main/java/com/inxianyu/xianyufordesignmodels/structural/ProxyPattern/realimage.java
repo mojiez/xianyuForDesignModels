@@ -10,8 +10,9 @@ public class realimage implements  image{
     }
 
     @Override
-    public void display() {
+    public String display() {
         System.out.printf("显示文件：%s%n",fileName);
+        return fileName;
     }
 
     private void loadFromDisk() {
